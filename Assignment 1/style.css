@@ -1,0 +1,346 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: sans-serif;
+  background-image: url("cricket.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+header{
+  position: sticky;
+  top: 0;
+}
+
+.navbar{
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.831);
+  display: flex;
+  justify-content: space-around;
+  
+}
+.div1{
+    text-align: center;
+    width: 20%;
+    padding-top: 20px;
+    color: white;
+  }
+.div2{
+  justify-content: space-evenly;
+    width: 80%;
+    color: white;
+    display: flex;
+}
+
+.el{
+  font-size: 20px;
+  width: 16%;
+  margin: 10px;
+  padding: 10px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.el a{
+  text-decoration: none;
+  color: white;
+  transition: 0.6s ease;
+}
+
+.el a:hover{
+  color: orange;
+}
+
+/* Overview + HTGS */
+.content {
+  background-color: rgba(0, 0, 0, 0.37);
+  color: rgb(255, 255, 255);
+  margin: 50px 15%;
+  padding: 20px;
+  transition: 0.8s ease;
+}
+.content h1,h2{
+  color: rgb(255, 255, 255);
+}
+.content:hover {
+  cursor: pointer;
+  background-color: rgba(8, 7, 7, 0.781);
+}
+@media (max-width:520px){
+  .content{
+    margin: 50px 10%;
+  }
+}
+.content h1 {
+  margin: 10px;
+}
+.h2heading {
+  margin: 15px;
+}
+.para {
+  font-size: 18px;
+  line-height: 30px;
+}
+.img-over {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.img-over img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .img-over img {
+    width: 40%;
+  }
+}
+
+/* ICC rankings */
+.formats {
+  justify-content: space-evenly;
+  display: flex;
+}
+.box {
+  background-color: rgba(32, 32, 32, 0.747);
+  transition: 0.8s ease;
+  width: 30%;
+  padding: 15px;
+  margin: 20px;
+}
+.box:hover {
+  background-color: rgba(12, 14, 17, 0.708);
+}
+.box ul {
+  list-style-type: none;
+}
+.box ul li {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (max-width: 1100px) {
+  .formats {
+    display: block;
+  }
+  .box {
+    text-align: center;
+    width: 70%;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
+@media (max-width: 600px) {
+  .formats {
+    display: block;
+  }
+  .box {
+    text-align: center;
+    width: 70%;
+    margin-left: 8%;
+    margin-right: 18%;
+  }
+}
+
+/* players */
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+.boxes_in_row {
+  background-color: rgba(32, 32, 32, 0.747);
+  margin: 10px;
+  padding: 10px;
+  transition: 0.8s ease;
+  width: 30%;
+}
+.boxes_in_row:hover {
+  background-color: rgba(12, 14, 17, 0.708);
+}
+.boxes_in_row ol {
+  list-style-type: none;
+  margin: 10px;
+}
+.boxes_in_row ol li {
+  margin: 10px;
+}
+.image {
+  display: flex;
+  justify-content: center;
+}
+.image img {
+  height: 200px;
+}
+.middle {
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .row {
+    display: block;
+  }
+  .boxes_in_row {
+    text-align: center;
+    width: 70%;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
+@media (max-width: 470px) {
+  .image img {
+    height: 130px;
+  }
+  .boxes_in_row {
+    text-align: center;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 16%;
+  }
+}
+
+/* quiz */
+.questions {
+  padding: 15px;
+}
+.button {
+  margin: 5px;
+  width: 170px;
+  height: 35px;
+  background-color: rgb(247, 250, 253);
+  font-size: 16px;
+  border: 2px solid white;
+  transition: 0.4s ease;
+}
+.button:hover {
+  border: 2px solid grey;
+  border-radius: 15px;
+}
+
+  @media (max-width : 1250px){
+      .navbar{
+        flex-direction: column;
+          height: 150px;
+      }
+      .div1{
+        padding: 0px;
+        padding-top: 15px;
+        margin: 0px;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+      }
+      .div2{
+          height: 50%;
+          width: 100%;
+      }
+    }
+    
+    
+    @media (max-width : 1090px){
+      .navbar{
+        flex-direction: column;
+        height: 200px;
+      }
+      .div1{
+          padding: 0px;
+          margin: 0px;
+          height: 50%;
+          width: 100%;
+          text-align: center;
+          padding-top: 50px;
+        }
+        .div2{
+          height: 50%;
+          width: 100%;
+      }
+    }
+  
+    @media (max-width : 1090px){
+      .navbar{
+        flex-direction: column;
+        height: 200px;
+      }
+      .div1{
+        padding: 0px;
+        padding-top: 15px;
+        margin: 0px;
+        height: 50%;
+          width: 100%;
+          text-align: center;
+        }
+      .div2{
+          height: 50%;
+          width: 100%;
+      }
+  }
+  @media (max-width : 720px){
+    .navbar{
+      flex-direction: column;
+          height: 200px;
+      }
+      .div1{
+        padding: 0px;
+        padding-top: 15px;
+          margin: 0px;
+          height: 50%;
+          width: 100%;
+          text-align: center;
+        }
+      .div2{
+        height: 50%;
+        width: 100%;
+      }
+      .el{
+          font-size: 17px;
+      }
+    }
+  @media (max-width : 490px){
+      .navbar{
+          flex-direction: column;
+          height: 200px;
+      }
+      .div1{
+          padding: 0px;
+          padding-top: 15px;
+          margin: 0px;
+          height: 50%;
+          width: 100%;
+          text-align: center;
+        }
+        .div2{
+          height: 50%;
+          width: 100%;
+        }
+        .el{
+          font-size: 14px;
+      }
+    }
+    @media (max-width : 465px){
+      .navbar{
+        flex-direction: column;
+        height: 200px;
+      }
+      .div1{
+        padding: 0px;
+        padding-top: 15px;
+        margin: 0px;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+      }
+      .div2{
+        height: 50%;
+        width: 100%;
+      }
+      .el{
+          font-size: 14px;
+          margin: 1px;
+      }
+    }
